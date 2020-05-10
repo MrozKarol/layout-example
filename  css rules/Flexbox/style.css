@@ -1,11 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .box {
     height: 10rem;
     width: 10rem;
+}
+
+.container {
+    border: 3px solid gray;
+    height: 50vh;
 }
 
 .box1 {

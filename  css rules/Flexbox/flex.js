@@ -11,7 +11,6 @@ const buttons = [...document.querySelectorAll('.flex-panel button ')];
 
 const optionParent = (e) => {
     // console.log(e.target.title)
-    const reset = ''
     const option = e.target.title;
     const btn = e.target
 
@@ -24,7 +23,7 @@ const optionParent = (e) => {
         btn.classList.remove('active');
     }
 
-
+    console.log(container.style)
 
 }
 
