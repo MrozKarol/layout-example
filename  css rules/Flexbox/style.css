@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid grey;
+}
+
+.box {
+    height: 10rem;
+    width: 10rem;
+}
+
+.box1 {
+    background: rebeccapurple;
+}
+
+.box2 {
+    background: rgb(51, 153, 136);
+}
+
+.box3 {
+    background: rgb(153, 51, 93);
+}
+
+.box4 {
+    background: rgb(82, 124, 216);
+}
+
+.box5 {
+    background: rgb(199, 134, 14);
+}
+
+.box6 {
+    background: rgb(185, 11, 11);
+}
