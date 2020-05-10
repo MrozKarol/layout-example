@@ -3,17 +3,13 @@
     padding: 0;
 }
 
-.container {
-    border: 2px solid grey;
-}
-
 .box {
     height: 10rem;
     width: 10rem;
 }
 
 .box1 {
-    background: rebeccapurple;
+    background: rgb(110, 51, 168);
 }
 
 .box2 {
@@ -34,4 +30,17 @@
 
 .box6 {
     background: rgb(185, 11, 11);
+}
+
+.active {
+    background: rgb(4, 248, 4);
+}
+
+.panlel-control {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
