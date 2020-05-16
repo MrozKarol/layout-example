@@ -167,6 +167,127 @@ nav ul {
     }
 }
 
+/* Benefits section */
+
+.benefits-head {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.benefits-head h3 {
+    padding: 1rem;
+}
+
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    text-align: center;
+    flex: 1 1 auto;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem
+}
+
+.card h4 {
+    padding: 1rem;
+}
+
+.card-icon {
+    background: gray;
+}
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('img/contact-mountain.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin-top: 0rem 3rem;
+}
+
+.form-wrapper button {
+    width: 100%;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: nowrap;
+}
+
+footer h5 {
+    flex: 1 1 40rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Media Query */
 @media screen and (max-width: 932px) {
     html {
@@ -200,5 +321,17 @@ nav ul {
         -webkit-text-fill-color: white
     }
 
+    .form-wrapper {
+        width: 100%;
+    }
+
+
+    footer {
+        text-align: center;
+    }
+
+    footer h5 {
+        padding-bottom: 2rem;
+    }
 
 }
