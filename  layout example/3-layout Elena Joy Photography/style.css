@@ -162,7 +162,7 @@ nav {
     left: -20%;
     z-index: -1;
     animation: plant-entrance 1s ease-in-out 0.5;
-
+    max-height: 80%;
 }
 
 .plant2 {
@@ -198,6 +198,16 @@ nav {
 
 
 @media screen and (max-width:842px) {
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-introduction p {
+        padding: 5rem 3rem;
+    }
+
+    /* BURGER THIML */
     .burger {
         position: relative;
         display: block;
@@ -262,4 +272,6 @@ nav {
     .menu-check:checked~.burger span:nth-child(3) {
         transform: rotateZ(-45deg) translateY(-300%);
     }
+
+
 }
