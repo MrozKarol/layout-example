@@ -5,7 +5,6 @@ $header4: 2rem;
 $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $gray-text: #2c2c2c;
-
 @mixin flex($justifi, $align, $direction) {
     display: flex;
     justify-content: $justifi;
@@ -14,3 +13,4 @@ $gray-text: #2c2c2c;
 }
 
 @import 'global';
+@import 'intro';
