@@ -4,7 +4,7 @@ $header3: 2.5rem;
 $header4: 2rem;
 $text: 2.5rem;
 $gradient: linear-gradient(left, #38d39f, #38a4d3);
-$grat-text: #2c2c2c;
+$gray-text: #2c2c2c;
 
 @mixin flex($justifi, $align, $direction) {
     display: flex;
@@ -13,6 +13,4 @@ $grat-text: #2c2c2c;
     flex-direction: $direction;
 }
 
-
-
-@import 'gobal'
+@import 'global';
