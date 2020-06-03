@@ -75,11 +75,56 @@ nav li > a {
 }
 
 nav li > a:hover {
-  border-bottom: 1px solid grey;
+  color: black;
+  text-decoration: underline;
 }
 
 .hero {
-  background-color: #f1f1be;
   height: 80vh;
+}
+
+.hero-introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-image {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 1rem;
+          flex: 2 1 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero-square {
+  position: relative;
+  top: -2.5rem;
+  width: 5.5rem;
+  height: 3rem;
+  background: palevioletred;
+}
+
+.hero-description {
+  width: 95%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
