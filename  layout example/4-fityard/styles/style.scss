@@ -1,5 +1,35 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+$header1: 2.5rem;
+$header2: 4rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$text: 2.5rem;
+@import 'global';
+.main-head {
+    width: 95%;
+    margin: 0 0 0 auto;
+}
+
+nav {
+    min-height: 10vh;
+    ul {
+        display: flex;
+    }
+    li {
+        text-transform: uppercase;
+        margin: 5rem 1rem;
+    }
+    li>a {
+        display: inline-block;
+        color: grey;
+        white-space: nowrap;
+        padding: 0.5rem 1rem;
+    }
+    li>a:hover {
+        border-bottom: 1px solid grey;
+    }
+}
+
+.hero {
+    background-color: rgb(241, 241, 190);
+    height: 80vh;
 }
