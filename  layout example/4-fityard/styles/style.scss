@@ -4,32 +4,44 @@ $header3: 2.5rem;
 $header4: 2rem;
 $text: 2.5rem;
 @import 'global';
+.wrapper {
+    max-width: 2400px;
+    margin: 0 auto;
+}
+
+// ------navigation-------
 .main-head {
     width: 95%;
     margin: 0 0 0 auto;
 }
 
 nav {
-    min-height: 10vh;
-    ul {
-        display: flex;
-    }
-    li {
-        text-transform: uppercase;
-        margin: 5rem 1rem;
-    }
-    li>a {
-        display: inline-block;
-        color: grey;
-        white-space: nowrap;
-        padding: 0.5rem 1rem;
-    }
-    li>a:hover {
-        color: black;
-        text-decoration: underline;
-    }
+    height: 10vh;
 }
 
+ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    text-transform: uppercase;
+}
+
+li>a {
+    // display: inline-block;
+    color: grey;
+    white-space: nowrap;
+    padding: 1.5rem 2rem;
+}
+
+li>a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+// ------hero-section----------
 .hero {
     // position: relative;
     height: 80vh;
@@ -62,12 +74,15 @@ nav {
 .hero-square {
     position: relative;
     top: -2.5rem;
-    width: 5.5rem;
-    height: 3rem;
+    width: 8.5rem;
+    height: 4rem;
     background: palevioletred;
 }
 
 .hero-description {
     width: 95%;
-    margin: auto
+    margin: auto;
+    padding-left: 1rem;
 }
+
+@import 'media'

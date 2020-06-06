@@ -47,34 +47,41 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
 .main-head {
   width: 95%;
   margin: 0 0 0 auto;
 }
 
 nav {
-  min-height: 10vh;
+  height: 10vh;
 }
 
-nav ul {
+ul {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav li {
+li {
   text-transform: uppercase;
-  margin: 5rem 1rem;
 }
 
-nav li > a {
-  display: inline-block;
+li > a {
   color: grey;
   white-space: nowrap;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
-nav li > a:hover {
+li > a:hover {
   color: black;
   text-decoration: underline;
 }
@@ -118,13 +125,40 @@ nav li > a:hover {
 .hero-square {
   position: relative;
   top: -2.5rem;
-  width: 5.5rem;
-  height: 3rem;
+  width: 8.5rem;
+  height: 4rem;
   background: palevioletred;
 }
 
 .hero-description {
   width: 95%;
   margin: auto;
+  padding-left: 1rem;
+}
+
+@media only screen and (max-width: 718px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+  nav {
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  li > a {
+    color: grey;
+    white-space: nowrap;
+    padding: 1.5rem 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
