@@ -7,6 +7,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -61,7 +62,7 @@ nav {
   height: 10vh;
 }
 
-ul {
+.nav-links {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,11 +72,11 @@ ul {
           align-items: center;
 }
 
-li {
+.nav-links > li {
   text-transform: uppercase;
 }
 
-li > a {
+.nav-links > li > a {
   color: grey;
   white-space: nowrap;
   padding: 1.5rem 2rem;
@@ -86,11 +87,8 @@ li > a:hover {
   text-decoration: underline;
 }
 
-.hero {
-  height: 80vh;
-}
-
 .hero-introduction {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,8 +121,8 @@ li > a:hover {
 }
 
 .hero-square {
-  position: relative;
-  top: -2.5rem;
+  position: absolute;
+  bottom: -1rem;
   width: 8.5rem;
   height: 4rem;
   background: palevioletred;
@@ -133,6 +131,61 @@ li > a:hover {
 .hero-description {
   width: 95%;
   margin: auto;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+}
+
+.ticket {
+  margin-top: 10rem;
+}
+
+.ticket-gellery {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ticket-photo1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.ticket-photo2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.ticket-photo3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.ticket-photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.ticket-square {
+  position: absolute;
+  bottom: -1rem;
+  width: 8.5rem;
+  height: 4rem;
+  background: orange;
+}
+
+.ticket-description {
+  margin-top: 1.8rem;
+  width: 95%;
+  margin: auto;
+  margin-top: 1.5rem;
   padding-left: 1rem;
 }
 
@@ -140,25 +193,28 @@ li > a:hover {
   html {
     font-size: 50%;
   }
+  .ticket-photo3 {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   html {
     font-size: 40%;
   }
-  nav {
-    height: 10vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  li > a {
+    color: grey;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    font-size: 38%;
   }
   li > a {
     color: grey;
-    white-space: nowrap;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
