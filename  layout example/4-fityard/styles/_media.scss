@@ -1,3 +1,24 @@
+@media only screen and (max-width: 1000px) {
+    .coach-photo1 {
+        flex: 1 1 25rem
+    }
+    .coach-photo2 {
+        flex: 1 1 25rem
+    }
+    .coach-photo3 {
+        flex: 1 1 25rem
+    }
+    .coach-photo4 {
+        flex: 1 1 25rem
+    }
+    .coach-photo5 {
+        flex: 1 1 25rem
+    }
+    .coach-photo6 {
+        flex: 1 1 25rem
+    }
+}
+
 @media only screen and (max-width: 718px) {
     html {
         font-size: 50%;
