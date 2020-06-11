@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1000px) {
+    // ---section coach---
     .coach-photo1 {
         flex: 1 1 25rem
     }
@@ -16,6 +17,10 @@
     }
     .coach-photo6 {
         flex: 1 1 25rem
+    }
+    // -----section contact-----
+    .contact-menu {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

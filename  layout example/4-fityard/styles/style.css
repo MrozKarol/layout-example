@@ -244,7 +244,7 @@ li > a:hover {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .photo-active {
@@ -270,37 +270,47 @@ li > a:hover {
 .contact-menu {
   position: relative;
   margin-top: 5rem;
-  height: 40vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 8rem;
+}
+
+.flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-icon {
+  padding: 4rem;
+}
+
+.contact-icon img {
+  width: 9rem;
 }
 
 .contact-map {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 16rem;
-          flex: 1 1 16rem;
+  color: white;
   background: #d1d1d1;
 }
 
 .contact-telephone {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 16rem;
-          flex: 1 1 16rem;
   background: #757474;
 }
 
 .contact-facebook {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 16rem;
-          flex: 1 1 16rem;
   background: #3C5A98;
 }
 
 .contact-instagram {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 16rem;
-          flex: 1 1 16rem;
   background: pink;
 }
 
@@ -342,6 +352,10 @@ li > a:hover {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 25rem;
             flex: 1 1 25rem;
+  }
+  .contact-menu {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 
