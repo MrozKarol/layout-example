@@ -1,7 +1,7 @@
 const coachPhotos = [...document.querySelectorAll('.coach-photo')]
 const trainerDescription = document.querySelector('.coach-description p')
 
-const opisy = ['Jola', 'Paweł', 'Stefan', 'Ewelina', 'Zosia', 'Janek']
+const opisy = ['Jodddddddddddddddddddddla', 'Paweł', 'Stefan', 'Ewelina', 'Zosia', 'Janek']
 
 
 const acticeTrener = (e) => {
