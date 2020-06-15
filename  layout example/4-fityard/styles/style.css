@@ -289,16 +289,23 @@ li > a:hover {
           align-items: center;
 }
 
-.contact-icon {
-  padding: 4rem;
+.contact-menu {
+  height: 35vh;
 }
 
-.contact-icon img {
+.contact-icon svg {
+  width: 8rem;
+  fill: #ececec;
+  -webkit-transition: width .2s ease-in-out;
+  transition: width .2s ease-in-out;
+}
+
+.contact-icon svg:hover,
+.contact-icon svg:active {
   width: 9rem;
 }
 
 .contact-map {
-  color: white;
   background: #d1d1d1;
 }
 
@@ -311,7 +318,7 @@ li > a:hover {
 }
 
 .contact-instagram {
-  background: pink;
+  background: #fa1cb7;
 }
 
 .contact-square {
