@@ -8,15 +8,56 @@
 html {
   font-size: 10px;
   background-color: #7ca1eb;
-  font-family: "arial", "sens-serif"; }
+  font-family: "arial", "sens-serif";
+  color: white; }
 
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1440px;
   background-color: #fdfdfd;
   margin: 0 auto;
   -webkit-box-shadow: 0 0 4px 0 black;
-          box-shadow: 0 0 4px 0 black; }
+          box-shadow: 0 0 4px 0 black;
+  font-size: 2rem; }
+
+.logo {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  height: 90px;
+  background-color: cadetblue; }
+
+.search {
+  background-color: #129da1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.settings {
+  background-color: chocolate;
+  padding: 0 50px 0 50px; }
+
+.menu {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: crimson; }
+
+.main-articles {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #cf6a3b;
+  height: 50vh; }
+
+.article-list {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: peru; }
+
+.footer {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: purple; }
 /*# sourceMappingURL=main.min.css.map */

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&family=Open+Sans&family=PT+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
 $main-color: #7ca1eb;
 $default-font: "arial", "sens-serif";
@@ -14,11 +14,51 @@ html {
   font-size: 10px;
   background-color: $main-color;
   font-family: $default-font;
+  color: white;
 }
 .wrapper {
   display: flex;
+  flex-wrap: wrap;
   max-width: 1440px;
   background-color: rgb(253, 253, 253);
   margin: 0 auto;
   box-shadow: 0 0 4px 0 black;
+  font-size: 2rem;
+}
+
+.logo {
+  flex-basis: 200px;
+  height: 90px;
+  background-color: cadetblue;
+}
+
+.search {
+  background-color: rgb(18, 157, 161);
+  flex-grow: 1;
+}
+
+.settings {
+  background-color: chocolate;
+  padding: 0 50px 0 50px;
+}
+
+.menu {
+  flex-basis: 100%;
+  background-color: crimson;
+}
+
+.main-articles {
+  flex-basis: 100%;
+  background-color: rgb(207, 106, 59);
+  height: 50vh;
+}
+
+.article-list {
+  flex-basis: 100%;
+  background-color: peru;
+}
+
+.footer {
+  flex-basis: 100%;
+  background-color: purple;
 }
