@@ -175,6 +175,10 @@ li>a:hover {
     opacity: 0.8;
 }
 
+.coach-photo:hover {
+    opacity: 0.9;
+}
+
 .photo-active {
     opacity: 1;
 }
@@ -206,6 +210,7 @@ li>a:hover {
 
 .flex-center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
