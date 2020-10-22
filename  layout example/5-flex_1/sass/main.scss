@@ -29,12 +29,42 @@ html {
 .logo {
   flex-basis: 200px;
   height: 90px;
-  background-color: cadetblue;
+  &_image {
+    width: 100%;
+  }
 }
 
 .search {
-  background-color: rgb(18, 157, 161);
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_input {
+    flex-basis: 60%;
+    height: 50%;
+    margin-right: 3vh;
+    padding: 0 10px;
+    font-size: 1.4rem;
+    &:focus {
+      box-shadow: 0 0 2px 1px $main-color;
+    }
+  }
+  &_btn {
+    height: 50%;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    border: 2px solid black;
+    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      background-color: black;
+      color: whitesmoke;
+    }
+    
+  }
 }
 
 .settings {
