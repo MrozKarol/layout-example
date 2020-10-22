@@ -68,8 +68,17 @@ html {
 }
 
 .settings {
-  background-color: chocolate;
-  padding: 0 50px 0 50px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  &_icon-linkhref {
+    margin:0 5px;
+    font-size: 3rem;
+    color: slategrey;
+    &:hover{
+      color: black;
+    }
+  }
 }
 
 .menu {
