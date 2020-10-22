@@ -63,7 +63,6 @@ html {
       background-color: black;
       color: whitesmoke;
     }
-    
   }
 }
 
@@ -72,10 +71,10 @@ html {
   padding: 0 30px;
   align-items: center;
   &_icon-linkhref {
-    margin:0 5px;
+    margin: 0 5px;
     font-size: 3rem;
     color: slategrey;
-    &:hover{
+    &:hover {
       color: black;
     }
   }
@@ -83,7 +82,38 @@ html {
 
 .menu {
   flex-basis: 100%;
-  background-color: crimson;
+  height: 70px;
+  background-color: rgb(57, 58, 66);
+  font-family: $special-font;
+  margin-top: 10px;
+  padding: 15px 40px 15px 80px;
+  &_list {
+    display: flex;
+    list-style: none;
+  }
+  &_item {
+    margin: 0 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 4rem;
+    &:hover {
+      border-bottom: 2px yellowgreen solid;
+    }
+    &:nth-last-child(1) {
+      margin-left: auto;
+      border: 1px solid gray;
+      &:hover {
+        border-color: yellow;
+      }
+      .menu_link{
+        padding: 0 22px;
+      }
+    }
+  }
+  &_link {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .main-articles {
