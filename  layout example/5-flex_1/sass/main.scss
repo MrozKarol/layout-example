@@ -105,7 +105,7 @@ html {
       &:hover {
         border-color: yellow;
       }
-      .menu_link{
+      .menu_link {
         padding: 0 22px;
       }
     }
@@ -116,10 +116,58 @@ html {
   }
 }
 
+.article {
+  padding: 30px 50px;
+  color: #333;
+  text-align: center;
+  &_image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  &_title {
+    font-family: $special-font;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 35px 0 15px;
+  }
+  &_indroduction {
+    line-height: 1.6;
+    font-size: 1.6rem;
+  }
+  &_btn {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    min-width: 200px;
+    font-size: 1.8rem;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: $main-color;
+    color: black;
+    &:hover {
+      background-color: wheat;
+    }
+  }
+}
 .main-articles {
   flex-basis: 100%;
-  background-color: rgb(207, 106, 59);
-  height: 50vh;
+  background-color: $main-color;
+  display: flex;
+  flex-wrap: wrap;
+  &_intro {
+    flex-basis: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 60px 0 30px;
+    text-align: center;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
+  }
+  .article {
+    flex-basis: 50%;
+  }
 }
 
 .article-list {

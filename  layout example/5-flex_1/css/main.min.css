@@ -115,11 +115,58 @@ html {
     color: white;
     text-decoration: none; }
 
+.article {
+  padding: 30px 50px;
+  color: #333;
+  text-align: center; }
+  .article_image {
+    display: block;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .article_title {
+    font-family: "PT Sans", "roboto";
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 35px 0 15px; }
+  .article_indroduction {
+    line-height: 1.6;
+    font-size: 1.6rem; }
+  .article_btn {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    min-width: 200px;
+    font-size: 1.8rem;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #7ca1eb;
+    color: black; }
+    .article_btn:hover {
+      background-color: wheat; }
+
 .main-articles {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: #cf6a3b;
-  height: 50vh; }
+  background-color: #7ca1eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .main-articles_intro {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 60px 0 30px;
+    text-align: center;
+    font-size: 4.4rem;
+    letter-spacing: 2px; }
+  .main-articles .article {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
 
 .article-list {
   -ms-flex-preferred-size: 100%;
