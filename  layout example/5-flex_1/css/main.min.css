@@ -121,9 +121,7 @@ html {
   text-align: center; }
   .article_image {
     display: block;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    width: 100%; }
   .article_title {
     font-family: "PT Sans", "roboto";
     text-transform: uppercase;
@@ -164,14 +162,19 @@ html {
     text-align: center;
     font-size: 4.4rem;
     letter-spacing: 2px; }
-  .main-articles .article {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
+
+.article {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
 
 .article-list {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  background-color: peru; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .footer {
   -ms-flex-preferred-size: 100%;

@@ -123,7 +123,7 @@ html {
   &_image {
     display: block;
     width: 100%;
-    object-fit: cover;
+    
   }
   &_title {
     font-family: $special-font;
@@ -165,14 +165,17 @@ html {
     font-size: 4.4rem;
     letter-spacing: 2px;
   }
-  .article {
-    flex-basis: 50%;
-  }
+ 
+}
+.article {
+  flex-basis: 50%;
 }
 
 .article-list {
   flex-basis: 100%;
-  background-color: peru;
+  display: flex;
+  flex-wrap: wrap
+ 
 }
 
 .footer {
