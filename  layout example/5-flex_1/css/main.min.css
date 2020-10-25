@@ -168,6 +168,10 @@ html {
 .article {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
+  @media (max-width: 799px) {
+    .article {
+      -ms-flex-preferred-size: 90%;
+          flex-basis: 90%; } }
 
 .article-list {
   -ms-flex-preferred-size: 100%;
