@@ -19,7 +19,7 @@ html {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1440px;
+  max-width: 1000px;
   background-color: rgb(253, 253, 253);
   margin: 0 auto;
   box-shadow: 0 0 4px 0 black;
@@ -120,6 +120,9 @@ html {
   padding: 30px 50px;
   color: #333;
   text-align: center;
+  &-small{
+    padding: 20px 30px;
+  }
   &_image {
     display: block;
     width: 100%;
@@ -174,7 +177,11 @@ html {
 .article-list {
   flex-basis: 100%;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  justify-content: space-around;
+  &_article{
+    flex-basis: 30%;
+  }
  
 }
 
