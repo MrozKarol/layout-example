@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 .grid {
@@ -12,6 +13,19 @@ body {
   min-height: 100vh;
   max-width: 1240px;
   margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-rows: auto auto auto 1fr auto auto;
+    grid-template-areas:
+      "logotype images"
+      "nav images"
+      "search images"
+      ". images"
+      "contact images"
+      "footerek footerek";
+     
+  }
 }
 
 .logo {
@@ -20,19 +34,32 @@ body {
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: wheat;
-  height: 8vh;
+  min-height: 8vh;
+  @media (min-width: 1024px) {
+    grid-area: logotype;
+    min-height: 6vh;
+  }
 }
 
 .search {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: tomato;
+  @media (min-width: 1024px) {
+    grid-area: search;
+    height: 6vh;
+  }
 }
 
 .menu {
+  grid-area: nav;
   grid-column: -1/-2;
   grid-row: 1/2;
   background-color: turquoise;
+  @media (min-width: 1024px) {
+    grid-area: nav;
+    min-height: 300px;
+  }
 }
 
 .gallery {
@@ -41,20 +68,24 @@ body {
   background-color: rgb(221, 175, 221);
 
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(205px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
   gap: 11px;
   padding: 120px 15px 15px;
   position: relative;
-  img{
-      width: 100%;
+  img {
+    width: 100%;
   }
-  h1{
-      position: absolute;
-      top: 30px;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      background-color: rgba(0,0,0,0.2);
+  h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 1024px) {
+    grid-area: images;
   }
 }
 
@@ -62,10 +93,17 @@ body {
   grid-area: 3/1/4/4;
   height: 6vh;
   background-color: yellowgreen;
+  @media (min-width: 1024px) {
+    grid-area: contact;
+  }
 }
 
 .footer {
+  grid-area: footerek;
   grid-area: 4/1/5/5;
   height: 4vh;
   background-color: slategrey;
+  @media (min-width: 1024px) {
+    grid-area: footerek;
+  }
 }
