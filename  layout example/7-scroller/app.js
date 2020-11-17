@@ -2,9 +2,17 @@ console.log("Hell");
 const rootElement = document.querySelector(".root");
 const sections = document.querySelectorAll("section");
 let currentSectionIndex = 0;
+let isThrottled = false;
 
 document.addEventListener("wheel", (e) => {
   const direction = e.deltaY > 0 ? 1 : -1;
+
+  if (isThrottled) return;
+  isThrottled = true;
+
+  setTimeout(() => {
+    isThrottled = false;
+  }, 1000);
 
   if (e.deltaY > 0 && direction === 1) {
     //scroll wheel up
@@ -18,5 +26,10 @@ document.addEventListener("wheel", (e) => {
 
   currentSectionIndex = currentSectionIndex + direction;
 
-  console.log(currentSectionIndex);
+  // console.log(currentSectionIndex);
+
+  sections[currentSectionIndex].scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
 });
