@@ -34,26 +34,6 @@
   width: 40%;
 }
 
-.benefits_info h3 {
-  font-family: Cabin;
-  margin: 5px 0;
-  color: #292929;
-  font-weight: 700;
-  text-align: left;
-  line-height: 46px;
-  font-size: 35px;
-}
-
-.benefits_info h3 span {
-  font-family: Cabin;
-  margin: 5px 0;
-  color: #292929;
-  font-weight: 700;
-  text-align: left;
-  line-height: 46px;
-  font-size: 35px;
-}
-
 .benefits_info_paragraph {
   color: #3a3a3a;
   font-family: "Open Sans";
@@ -72,8 +52,10 @@
   text-align: left;
 }
 .benefits_icons {
-  width: 100%;
   display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  padding-right: 10%;
 }
 
 .benefits_icon {
@@ -85,11 +67,16 @@
 }
 
 .benefits_icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 60px;
+  height: auto;
+  max-width: 100%;
+  border: 0;
+  vertical-align: middle;
 }
 
 .benefits_icon h3 span {
-  font-size: 10px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-top: 9px;
+  font-size: 16px;
 }
