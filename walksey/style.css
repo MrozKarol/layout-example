@@ -3,11 +3,6 @@
   margin: 0;
   padding: 0;
 }
-.section-1 {
-  width: 1300px;
-  margin: auto;
-  height: 40vh;
-}
 
 .swiper-container {
   width: 100%;
@@ -15,68 +10,12 @@
   border-radius: 15px;
 }
 
-.swiper-slide {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
+.swiper-container {
+  width: 100% !important;
 }
 
-.benefits_info_1 {
-  background: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-a399fff3--WalkseyDownSuitADHomeFunctionalityAllInOneConvenience.jpg?v=1620666070");
-}
-
-.benefits_info_2 {
-  background: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-d5a4c2a8--WalkseyDownSuitADHomeFunctionalityAllWeatherProtection.gif?v=1620123210");
-  background-size: cover;
-}
-
-.benefits_info {
-  width: 40%;
-}
-
-.benefits_info_paragraph {
-  color: #3a3a3a;
-  font-family: "Open Sans";
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.benefits_info_span {
-  color: #3a3a3a;
-  font-family: "Open Sans";
-  font-size: 20px;
-  margin-top: 5px;
-  margin-bottom: 0;
-  text-align: left;
-}
-.benefits_icons {
-  display: flex;
-  margin-top: 20px;
-  justify-content: flex-start;
-  padding-right: 10%;
-}
-
-.benefits_icon {
-  height: 120px;
-  text-align: center;
-  padding: 0;
-  margin: 0 5px 0 0;
-  width: 110px !important;
-}
-
-.benefits_icon img {
-  width: 60px;
-  height: auto;
-  max-width: 100%;
-  border: 0;
-  vertical-align: middle;
-}
-
-.benefits_icon h3 span {
-  font-family: "Open Sans";
-  font-weight: 400;
-  margin-top: 9px;
-  font-size: 16px;
+@media screen and (max-width: 1300px) {
+  .swiper-slide {
+    width: 400px;
+  }
 }
