@@ -1,15 +1,13 @@
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     effect: "fade",
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
     autoplay: {
-        delay: 1000,
+        delay: 2500,
         disableOnInteraction: false,
     },
 });
+
+
 
 
 var swiper = new Swiper(".mySwiper1", {
