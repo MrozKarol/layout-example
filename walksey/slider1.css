@@ -4,25 +4,23 @@
   padding: 0;
 }
 
-.silder-1-height {
-  height: auto;
+.section-slider-1 {
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 .swiper-container {
   width: 100%;
   height: 100%;
 }
-
-.swiper-slide {
-  width: 100% !important;
+.swiper-slide-box div {
+  height: 585px;
 }
 
 .slider1 {
   background-size: cover;
   background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-a399fff3--WalkseyDownSuitADHomeFunctionalityAllInOneConvenience.jpg?v=1620666070");
   display: block;
-  padding-left: 7%;
-  padding-top: 7%;
   background-attachment: local;
   border-radius: 15px;
   border: 3px solid #ddd;
@@ -34,8 +32,6 @@
   background-size: cover;
   background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-d5a4c2a8--WalkseyDownSuitADHomeFunctionalityAllWeatherProtection.gif?v=1620123210");
   display: block;
-  padding-left: 7%;
-  padding-top: 7%;
   background-attachment: local;
   border: 3px solid #ddd;
   border-radius: 15px;
@@ -47,8 +43,6 @@
   background-size: cover;
   background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-b464d5a4--WalkseyDownSuitADHomeFunctionality3SeasonProtection.gif?v=1620123202");
   display: block;
-  padding-left: 7%;
-  padding-top: 7%;
   background-attachment: local;
   border-radius: 15px;
   border: 3px solid #ddd;
@@ -60,8 +54,7 @@
   background-size: cover;
   background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-fff38538--WalkseyDownSuitADHomeFunctionalityUltimateFunctionality.jpg?v=1620666656");
   display: block;
-  padding-left: 7%;
-  padding-top: 7%;
+
   background-attachment: local;
   border-radius: 15px;
   border: 3px solid #ddd;
@@ -69,54 +62,59 @@
   background-repeat: no-repeat;
 }
 
-/* .swiper-container {
-  width: 100% !important;
-} */
+.slider-box-contnet-info {
+  position: relative;
+  width: 38%;
+  top: 50%;
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-25%);
+}
+
+.slider-box-contnet-icon {
+  display: flex;
+}
+
+.slider-box-contnet-icon img {
+  width: 50px;
+}
 
 @media screen and (min-width: 1300px) {
-  .swiper-slide-2 {
-    width: 500px !important;
-  }
-  .hight-slider1 {
-    height: 510px;
-  }
 }
 
 @media screen and (max-width: 1300px) {
-  .swiper-slide-2 {
-    width: 450px !important;
-  }
-  .hight-slider1 {
-    height: 510px;
-  }
 }
 
 @media screen and (max-width: 1024px) {
-  .swiper-slide-2 {
-    width: 400px !important;
+  .slider1 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-47a72e60--WalkseyDownSuitTHomeFunctionalityAllInOneConvenience.jpg?v=1620669060");
+    padding: 5% 0 0;
+    background-position: center center;
   }
-  .hight-slider1 {
-    height: 885px;
+
+  .slider2 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-4847a72e--WalkseyDownSuitTHomeFunctionalityAllWeatherProtection.gif?v=1620669019");
+    padding: 5% 0 0;
+    background-position: center center;
+  }
+  .slider3 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-bf4847a7--WalkseyDownSuitTHomeFunctionality3SeasonProtection.gif?v=1620668936");
+    padding: 5% 0 0;
+    background-position: center center;
+  }
+  .slider4 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-2e60196d--WalkseyDownSuitTHomeFunctionalityUltimateFunctionality.jpg?v=1620669181");
+    padding: 5% 0 0;
+    background-position: center center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-slide-2 {
-    width: 380px !important;
-  }
-  .hight-slider1 {
-    height: 653px;
-  }
 }
 
 @media screen and (max-width: 520px) {
-  .swiper-slide-2 {
-    width: 320px !important;
-  }
 }
 
 @media screen and (max-width: 408px) {
-  .swiper-slide-2 {
-    width: 250px !important;
-  }
 }
