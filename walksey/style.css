@@ -4,119 +4,73 @@
   padding: 0;
 }
 
-.silder-1-height {
-  height: auto;
+html {
+  font-size: 62.5%;
 }
 
-.swiper-container {
+.section-slider-2 {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.swiper-container-2 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-box-2 {
+  border-radius: 15px;
+  border: 3px solid #ddd;
+  width: 400px !important;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-slifer-2-image {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
-  width: 100% !important;
+.slider-2-box-dis {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.slider1 {
-  background-size: cover;
-  background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-a399fff3--WalkseyDownSuitADHomeFunctionalityAllInOneConvenience.jpg?v=1620666070");
-  display: block;
-  padding-left: 7%;
-  padding-top: 7%;
-  background-attachment: local;
-  border-radius: 15px;
-  border: 3px solid #ddd;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.slider2 {
-  background-size: cover;
-  background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-d5a4c2a8--WalkseyDownSuitADHomeFunctionalityAllWeatherProtection.gif?v=1620123210");
-  display: block;
-  padding-left: 7%;
-  padding-top: 7%;
-  background-attachment: local;
-  border: 3px solid #ddd;
-  border-radius: 15px;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.slider3 {
-  background-size: cover;
-  background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-b464d5a4--WalkseyDownSuitADHomeFunctionality3SeasonProtection.gif?v=1620123202");
-  display: block;
-  padding-left: 7%;
-  padding-top: 7%;
-  background-attachment: local;
-  border-radius: 15px;
-  border: 3px solid #ddd;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.slider4 {
-  background-size: cover;
-  background-image: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-fff38538--WalkseyDownSuitADHomeFunctionalityUltimateFunctionality.jpg?v=1620666656");
-  display: block;
-  padding-left: 7%;
-  padding-top: 7%;
-  background-attachment: local;
-  border-radius: 15px;
-  border: 3px solid #ddd;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-/* .swiper-container {
-  width: 100% !important;
-} */
 
 @media screen and (min-width: 1300px) {
-  .swiper-slide-2 {
+  .swiper-box-2 {
     width: 500px !important;
-  }
-  .hight-slider1 {
-    height: 510px;
   }
 }
 
 @media screen and (max-width: 1300px) {
-  .swiper-slide-2 {
+  .swiper-box-2 {
     width: 450px !important;
-  }
-  .hight-slider1 {
-    height: 510px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .swiper-slide-2 {
+  .swiper-box-2 {
     width: 400px !important;
-  }
-  .hight-slider1 {
-    height: 885px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .swiper-slide-2 {
+  .swiper-box-2 {
     width: 380px !important;
-  }
-  .hight-slider1 {
-    height: 653px;
   }
 }
 
 @media screen and (max-width: 520px) {
-  .swiper-slide-2 {
+  .swiper-box-2 {
     width: 320px !important;
   }
 }
 
 @media screen and (max-width: 408px) {
-  .swiper-slide-2 {
+  .swiper-box-2 {
     width: 250px !important;
   }
 }
