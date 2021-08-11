@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,15 +40,36 @@ html {
   margin-bottom: 20px;
 }
 
+.slider-2-box-dis__h3 {
+  margin: 10px 0;
+  font-family: "Open Sans";
+  font-size: 25px;
+  color: #292929;
+}
+
+.slider-2-box-dis__p {
+  margin: 0;
+  font-family: "Open Sans";
+  font-size: 25px;
+  color: #3a3a3a;
+  padding: 0 7% 20px;
+  line-height: 30px;
+}
+
+.flex-slider {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media screen and (min-width: 1300px) {
   .swiper-box-2 {
-    width: 500px !important;
+    width: 400px !important;
   }
 }
 
 @media screen and (max-width: 1300px) {
   .swiper-box-2 {
-    width: 450px !important;
+    width: 320px !important;
   }
 }
 
@@ -72,5 +94,14 @@ html {
 @media screen and (max-width: 408px) {
   .swiper-box-2 {
     width: 250px !important;
+  }
+
+  .slider-2-box-dis__h3 {
+    font-size: 23px;
+  }
+
+  .slider-2-box-dis__p {
+    font-size: 20px;
+    padding: 0 1px 0 1px;
   }
 }

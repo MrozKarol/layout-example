@@ -14,10 +14,6 @@ html {
   --big: 2.4rem;
 }
 
-body {
-  background: gray;
-}
-
 .section-slider-1 {
   margin: 0 auto;
   max-width: 1300px;
@@ -113,7 +109,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .slider1 {
-    content: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-47a72e60--WalkseyDownSuitTHomeFunctionalityAllInOneConvenience.jpg?v=1620669060");
+    content: url("https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-47a72e60--WalkseyDownSuitTHomeFunctionalityAllInOneConvenience.jpg?v=1620669060") !important;
   }
 
   .slider2 {

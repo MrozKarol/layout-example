@@ -15,16 +15,16 @@
 
     <section class="section-slider-2">
         <div class="swiper-container swiper-container-2 mySwiper2">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper swiper-wrapper-2">
                 <div class="swiper-slide swiper-box-2">
                     <div class="slider-2-box">
                         <img src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-376a90e9--WalkseyDownSuitADTMHomeWhatIsWalkseySuperConvenient.gif?v=1619877488"
                             class="swiper-slifer-2-image">
                     </div>
                     <div class="slider-2-box-dis">
-                        <h3><span class="sc-eGJWMs gQYBcx pf-133_"><span style="text-decoration-line: underline;">Super
-                                    Convenient</span></span></h3>
-                        <p class="sc-TtZnY fPBQTR pf-134_" class="sc-eGJWMs gQYBcx pf-136_">Instantly warm and
+                        <h3 class="slider-2-box-dis__h3" style="text-decoration-line: underline;">Super
+                            Convenient</h3>
+                        <p class="slider-2-box-dis__p">Instantly warm and
                             comfortable in virtually any
                             cold
                             weather.</span></p>
@@ -36,9 +36,9 @@
                             class="swiper-slifer-2-image">
                     </div>
                     <div class="slider-2-box-dis">
-                        <h3><span class="sc-eGJWMs gQYBcx pf-142_"><span style="text-decoration-line: underline;">Super
-                                    Warm</span></span></h3>
-                        <p class="sc-TtZnY fPBQTR pf-143_" class="sc-eGJWMs gQYBcx pf-145_">The first of its
+                        <h3 class="slider-2-box-dis__h3" style="text-decoration-line: underline;">Super
+                            Warm</h3>
+                        <p class="slider-2-box-dis__p">The first of its
                             kind
                             everyday expedition down
                             suit.</span>
@@ -52,9 +52,9 @@
 
 
                     <div class="slider-2-box-dis">
-                        <h3><span class="sc-eGJWMs gQYBcx pf-151_"><span style="text-decoration-line: underline;">Super
-                                    Light</span></span></h3>
-                        <p class="sc-TtZnY fPBQTR pf-152_" class="sc-eGJWMs gQYBcx pf-154_">Perfect for all
+                        <h3 class="slider-2-box-dis__h3" style="text-decoration-line: underline;">Super
+                            Light</h3>
+                        <p class="slider-2-box-dis__p">Perfect for all
                             adventures
                             in between and on
                             the
@@ -64,23 +64,58 @@
             </div>
         </div>
     </section>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper2", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
-        });
+        const slider = document.querySelector('.swiper-wrapper-2')
+        const loadSize = window.addEventListener('DOMContentLoaded', () => {
+            const width = window.innerWidth;
+            if (width <= 1024) {
+                var swiper = new Swiper(".mySwiper2", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    initialSlide: 1,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                });
+            }
+            else {
+                slider.classList.add('flex-slider')
+            }
+
+        })
+
+        const resizeLoadSize = window.addEventListener('resize', () => {
+            const widthResize = window.innerWidth;
+            if (widthResize < 1024) {
+                var swiper = new Swiper(".mySwiper2", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    initialSlide: 1,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                });
+            }
+            if (widthResize < 1024) {
+                slider.classList.remove('flex-slider')
+            }
+
+        })
     </script>
 </body>
 
