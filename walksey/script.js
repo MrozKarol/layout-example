@@ -24,3 +24,13 @@ var swiper = new Swiper(".mySwiper1", {
         slideShadows: true,
     },
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#image-slider', {
+        type: 'fade',
+        rewind: true,
+        arrows: false,
+        pagination: false,
+    }).mount();
+});
