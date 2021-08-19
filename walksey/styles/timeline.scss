@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.collapse-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 500px;
+  height: 500px;
+}
+
+.box-1 img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.collapse-box.even .box-1 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.collapse-box.even .box-3 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
