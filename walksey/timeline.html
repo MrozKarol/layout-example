@@ -17,8 +17,7 @@
                         src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-1d53950c--WalkseyDownSuitADTMAboutTimelineProblem.jpg?v=1627394847 1536w, https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-1d53950c--WalkseyDownSuitADTMAboutTimelineProblem_500x.jpg?v=1627394847 320w"
                         alt=""></div>
                 <div class="box-2 ">
-                    <img class="arrow"
-                        src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-df577961--WalkseyDownSuitADTAboutTimelineIconLoadMore.svg?v=1627395514"
+                    <img src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-79612a50--WalkseyDownSuitADTAboutTimelineIconStart.svg?v=1627395521"
                         alt="">
                 </div>
                 <div class="box-3">
@@ -53,7 +52,8 @@
                         src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-950c395d--WalkseyDownSuitADTMAboutTimelineResearch.jpg?v=1627394853"
                         alt=""></div>
                 <div class="box-2 ">
-                    <img src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-5779612a--WalkseyDownSuitADTAboutTimelineIconMiddle.svg?v=1627395518"
+                    <img class="arrow"
+                        src="https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-df577961--WalkseyDownSuitADTAboutTimelineIconLoadMore.svg?v=1627395514"
                         alt="">
                 </div>
                 <div class="box-3">
@@ -160,31 +160,87 @@
 
 
     <script>
+
         const btnTimeline = document.querySelector('.timeline-section_button')
         const collapseWrapper = document.querySelector('.collapse-wrapper')
         const arrowImage = document.querySelector('.arrow')
         const collapseBox = document.querySelector('.collapse-box')
         const collapseBoxs = document.querySelectorAll('.collapse-box').length
+        const heightBox = collapseBox.offsetHeight
 
-        btnTimeline.addEventListener('click', () => {
-            let heightBox = collapseBox.offsetHeight
-
-            console.log(heightBox)
+        window.addEventListener('load', () => {
 
 
-            if (btnTimeline.textContent === "Load More") {
-                collapseWrapper.style.height = `${(heightBox * collapseBoxs) + 100}px`
-                btnTimeline.textContent = "Show Less"
-                arrowImage.src = "https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-79612a50--WalkseyDownSuitADTAboutTimelineIconStart.svg?v=1627395521"
+            console.log(heightBox + "ddd")
 
-            }
-            else {
-                collapseWrapper.style.height = `${heightBox}px`
+            collapseWrapper.style.height = `${(heightBox) * 3}px`
+
+            console.log(collapseWrapper.style.height = `${(heightBox) * 3}px`)
+
+            btnTimeline.addEventListener('click', () => {
+
+
+                if (btnTimeline.textContent === "Load More") {
+                    collapseWrapper.style.height = `${(heightBox * collapseBoxs)}px`
+                    btnTimeline.textContent = "Show Less"
+                    arrowImage.src = "https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-5779612a--WalkseyDownSuitADTAboutTimelineIconMiddle.svg?v=1627395518"
+
+                }
+                else {
+                    collapseWrapper.style.height = `${(heightBox) * 3}px`
+                    btnTimeline.textContent = "Load More"
+                    arrowImage.src = "https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-df577961--WalkseyDownSuitADTAboutTimelineIconLoadMore.svg?v=1627395514"
+
+                }
+            })
+
+            window.addEventListener('resize', () => {
+                let heightBox = collapseBox.offsetHeight
+
+
+                console.log(heightBox)
+
+                collapseWrapper.style.height = `${(heightBox) * 3}px`
+
+                console.log(collapseWrapper.style.height = `${(heightBox) * 3}px`)
+
                 btnTimeline.textContent = "Load More"
                 arrowImage.src = "https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-df577961--WalkseyDownSuitADTAboutTimelineIconLoadMore.svg?v=1627395514"
 
-            }
-        })
+
+
+
+            }, false)
+
+            window.addEventListener('orientationchange', () => {
+                let heightBox = collapseBox.offsetHeight
+
+
+                console.log(heightBox)
+
+                collapseWrapper.style.height = `${(heightBox) * 3}px`
+
+                console.log(collapseWrapper.style.height = `${(heightBox) * 3}px`)
+
+                btnTimeline.textContent = "Load More"
+                arrowImage.src = "https://cdn.shopify.com/s/files/1/0486/4124/5339/t/6/assets/pf-df577961--WalkseyDownSuitADTAboutTimelineIconLoadMore.svg?v=1627395514"
+
+            }, false)
+
+
+
+
+        }, false)
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 
