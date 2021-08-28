@@ -160,20 +160,22 @@
 
 
     <script>
-
+        const timelineSection = document.querySelector('.timeline-section')
         const btnTimeline = document.querySelector('.timeline-section_button')
         const collapseWrapper = document.querySelector('.collapse-wrapper')
         const arrowImage = document.querySelector('.arrow')
         const collapseBox = document.querySelector('.collapse-box')
         const collapseBoxs = document.querySelectorAll('.collapse-box').length
-        const heightBox = collapseBox.offsetHeight
+
 
         window.addEventListener('load', () => {
+            let heightBox = collapseBox.clientHeight
 
-
-            console.log(heightBox + "ddd")
+            console.log(heightBox + "load")
 
             collapseWrapper.style.height = `${(heightBox) * 3}px`
+
+
 
             console.log(collapseWrapper.style.height = `${(heightBox) * 3}px`)
 
@@ -195,10 +197,13 @@
             })
 
             window.addEventListener('resize', () => {
+
                 let heightBox = collapseBox.offsetHeight
 
 
-                console.log(heightBox)
+
+                console.log(heightBox + "resize")
+                collapseWrapper.style.height = `0px`
 
                 collapseWrapper.style.height = `${(heightBox) * 3}px`
 
@@ -210,13 +215,16 @@
 
 
 
+
+
             }, false)
 
             window.addEventListener('orientationchange', () => {
                 let heightBox = collapseBox.offsetHeight
 
 
-                console.log(heightBox)
+                console.log(heightBox + 'chande orient')
+                collapseWrapper.style.height = `0px`
 
                 collapseWrapper.style.height = `${(heightBox) * 3}px`
 
@@ -231,15 +239,6 @@
 
 
         }, false)
-
-
-
-
-
-
-
-
-
 
     </script>
 </body>
