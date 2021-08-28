@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -19,13 +20,13 @@
   margin-top: 10px; }
 
 .slider-3-wrapper_heding h3:last-child {
-  font-size: 30px;
-  font-family: "Open Sans";
-  font-weight: 600;
+  font-family: Cabin;
+  font-size: 35px;
   color: #292929;
+  margin-bottom: 15px;
   text-align: center;
-  margin-bottom: 20px;
-  margin-top: 0; }
+  margin-top: 0;
+  font-weight: 700; }
 
 .slider-3_conteiner {
   margin: 0 auto;
@@ -34,10 +35,10 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 5px; }
+  grid-gap: 15px; }
 
 .slider-3_one {
-  padding: 30px;
+  padding: 30px 0 30px 0;
   background: #f5f5f5;
   border-radius: 15px;
   display: -webkit-box;
@@ -57,13 +58,15 @@
       justify-content: space-around; }
 
 .slider-3_one_info {
-  width: 90%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .slider-3_one_info h3 {
   font-family: "Open Sans";
@@ -83,6 +86,8 @@
   line-height: 22px; }
 
 .slider-3_one_info img {
+  width: 90px;
+  height: 90px;
   margin-right: 15px; }
 
 .slider-3_two {
@@ -95,10 +100,14 @@
      object-fit: cover;
   border-radius: 15px; }
 
+@media screen and (max-width: 1119px) {
+  .slider-3_one_info {
+    width: 75%; } }
+
 @media screen and (max-width: 1060px) {
   .slider-3_conteiner {
     margin: 0 auto;
-    width: 80%;
+    width: 600px;
     display: -ms-grid;
     display: grid;
     grid-gap: 0;
@@ -106,44 +115,103 @@
         grid-template-columns: initial;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr; }
+  .slider-3-wrapper_heding h3:last-child {
+    padding: 15px; }
   .slider-3_one {
     -ms-grid-row: 2;
         grid-row-start: 2;
     border-radius: 0 0 15px 15px; }
+  .slider-3_one_info {
+    width: 75%;
+    padding-top: 15px;
+    padding-bottom: 15px; }
   .slider-3_two {
     -ms-grid-row: 1;
         grid-row-start: 1; }
   .slider-3_two img {
     border-radius: 15px 15px 0 0; } }
 
-@media screen and (max-width: 628px) {
-  .slider-3_one {
-    padding: 10px; } }
-
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 767px) {
+  .slider-3-wrapper_heding h3:first-child {
+    font-size: 20px;
+    margin-bottom: 0px; }
   .slider-3-wrapper_heding h3:last-child {
     font-size: 25px;
-    margin-bottom: 10px; }
-  .section-slider-3 {
-    min-height: 100vh; }
+    margin-bottom: 5px; }
   .slider-3_conteiner {
-    width: 95%;
-    -ms-grid-rows: auto;
-        grid-template-rows: auto; }
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px; }
   .slider-3_one {
-    padding: 10px 0 10px 0; }
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
   .slider-3_one_info {
-    width: 98%; }
+    width: 90%;
+    max-width: 370px; }
   .slider-3_one_info h3 {
-    font-size: 20px; }
+    font-size: 20px;
+    padding-bottom: 0; }
   .slider-3_one_info p {
-    font-size: 15px; }
+    font-size: 15px;
+    line-height: 20px; }
   .slider-3_one_info img {
-    width: 60px;
-    margin-right: 15px; }
+    width: 65px;
+    height: auto;
+    margin-bottom: 10px; }
+  .slider-3_two {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    min-height: auto; }
   .slider-3_two img {
     width: 100%;
-    height: 100%;
-    -o-object-fit: initial;
-       object-fit: initial; } }
+    height: auto; } }
+
+@media screen and (max-width: 528px) {
+  .slider-3_conteiner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse; }
+  .slider-3_one {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    padding: 30px 0 30px 0; }
+  .slider-3_one_info {
+    width: 90%;
+    max-width: 370px; }
+  .slider-3_one_info h3 {
+    font-size: 20px;
+    padding-bottom: 0; }
+  .slider-3_one_info p {
+    font-size: 15px;
+    line-height: 20px; }
+  .slider-3_one_info img {
+    width: 65px;
+    height: auto;
+    margin-bottom: 10px; }
+  .slider-3_two {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    min-height: auto; }
+  .slider-3_two img {
+    width: 100%;
+    height: auto; } }
 /*# sourceMappingURL=slider3.min.css.map */
